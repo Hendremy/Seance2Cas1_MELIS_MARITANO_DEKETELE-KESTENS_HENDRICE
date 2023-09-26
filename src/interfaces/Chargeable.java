@@ -1,5 +1,7 @@
 package interfaces;
 
+import classes.ChargeType;
+
 public interface Chargeable {
-    void charger ();
+    ChargeType getChargeType();
 }

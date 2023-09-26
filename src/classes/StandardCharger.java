@@ -1,17 +1,23 @@
 package classes;
-
 import interfaces.Chargeable;
 import interfaces.Charger;
 
 public class StandardCharger implements Charger{
-    Chargeable phone;
-
-    public StandardCharger(Chargeable phone) {
-        this.phone = phone;
-    }
 
     @Override
-    public void connectPhone() {
-        System.out.println("Charging SimplePhone ...");
+    public void connect(Chargeable phone) {
+        String charging = "";
+        switch(phone.getChargeType()){
+            case SIMPLE:
+                charging = "Charging SimplePhone ...";
+                break;
+            case USBC:
+                charging = "Charging USBCSmartPhone";
+                break;
+            default:
+                charging = "Charging method unknown";
+                break;
+        }
+        System.out.println(charging);
     }
 }

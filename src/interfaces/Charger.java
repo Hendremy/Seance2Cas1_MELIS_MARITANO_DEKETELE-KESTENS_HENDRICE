@@ -1,5 +1,5 @@
 package interfaces;
 
 public interface Charger {
- void connectPhone ();
+ void connect (Chargeable phone);
 }

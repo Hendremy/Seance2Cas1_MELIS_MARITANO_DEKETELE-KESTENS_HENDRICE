@@ -1,13 +1,14 @@
+import classes.ChargeType;
+import classes.Phone;
 import classes.StandardCharger;
-import classes.USBCSmartphone;
 import interfaces.Chargeable;
 
 public class App
 {
     public static void main( String[] args )
     {
-        Chargeable simplePhone = new USBCSmartphone();
-        StandardCharger standardCharger = new StandardCharger(simplePhone);
-        standardCharger.connectPhone();
+        Chargeable simplePhone = new Phone(ChargeType.USB3);
+        StandardCharger standardCharger = new StandardCharger();
+        standardCharger.connect(simplePhone);
     }
 }

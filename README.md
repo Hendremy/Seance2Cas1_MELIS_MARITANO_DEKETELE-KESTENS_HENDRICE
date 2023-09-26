@@ -15,3 +15,14 @@ Pour ce faire, on peut faire en sorte que USBCSmartphone hérite de l'interface 
 # Inconvénient
 - Chaque téléphone définit sa manière de charger, par rapport à SRP, ce n'est pas la responsabilité d'un téléphone de se charger lui-même
 - Devoir créer une classe de téléphone pour chaque différent type de port de chargement
+
+## Solution 2
+Exporter le type de chargement en propriété de classe Phone et faire en sorte que le chargeur charge différement selon cet attribut.
+De plus, le chargeur n'a pas besoin de connaître le téléphone à sa création, seulement au moment de charger le téléphone.
+
+# Avantages
+- Moins de répétition de code
+- Plus besoin de créer une classe pour chaque type de téléphone
+
+# Désavantage
+- Restructuration & modificiation du code => risque fort de casser le code déjà existant
