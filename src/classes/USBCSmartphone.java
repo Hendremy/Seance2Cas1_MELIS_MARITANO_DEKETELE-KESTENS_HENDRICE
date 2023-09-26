@@ -1,7 +1,11 @@
 package classes;
 
-public class USBCSmartphone {
-    public void chargeWithUSBCCable() {
+import interfaces.Chargeable;
+
+public class USBCSmartphone implements Chargeable {
+
+    @Override
+    public void charger() {
         System.out.println("Charging USB-C phone");
     }
 }
