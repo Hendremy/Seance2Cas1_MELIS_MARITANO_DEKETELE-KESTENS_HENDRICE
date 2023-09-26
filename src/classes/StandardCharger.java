@@ -12,6 +12,6 @@ public class StandardCharger implements Charger{
 
     @Override
     public void connectPhone() {
-        System.out.println("Charging SimplePhone ...");
+        this.phone.charger();
     }
 }
