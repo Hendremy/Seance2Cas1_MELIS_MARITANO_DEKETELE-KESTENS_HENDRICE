@@ -1,4 +1,3 @@
-import classes.SimplePhone;
 import classes.StandardCharger;
 import classes.USBCSmartphone;
 import interfaces.Chargeable;
