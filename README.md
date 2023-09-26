@@ -23,6 +23,8 @@ De plus, le chargeur n'a pas besoin de connaître le téléphone à sa création
 # Avantages
 - Moins de répétition de code
 - Plus besoin de créer une classe pour chaque type de téléphone
+- Responsabilité du chargement relayée au StandardCharger
+- Pour gérer un cas en plus, il suffit de rajouter un case au switch
 
 # Désavantage
 - Restructuration & modificiation du code => risque fort de casser le code déjà existant
